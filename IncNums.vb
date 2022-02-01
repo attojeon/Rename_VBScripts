@@ -47,5 +47,5 @@ Function OnGetNewName(ByRef getNewNameData)
 		olds(i) = olds(i)
 	Next
 	new_name = Join(olds, ".")
-	OnGetNewName = new_name
+	OnGetNewName = new_name & item.ext
 End Function
